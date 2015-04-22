@@ -1,0 +1,29 @@
+body {
+  font-family: monospace;
+}
+
+table {
+  border-collapse: collapse;
+
+  cursor: default;
+}
+
+td {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #000;
+
+  text-align: center;
+}
+
+.uncovered {
+  background-color: #eee;
+}
+
+.mine {
+  background-color: #000;
+}
+
+.flagged {
+  background-color: #800;
+}
