@@ -177,6 +177,11 @@ minesweeper.init = function() {
             mineSpan.textContent--;
         }
 
+        if (mineSpan.textContent === '0') {
+            message.textContent = 'You win; click start to go again';
+            return false;
+        }
+
         ai.onclick(
             Array.prototype.indexOf.call(tbody.children, cell.parentNode),
             Array.prototype.indexOf.call(cell.parentNode.children, cell)
